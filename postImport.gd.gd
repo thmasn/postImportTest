@@ -1,3 +1,5 @@
+# example code from https://docs.godotengine.org/en/stable/classes/class_editorscenepostimport.html
+
 @tool # Needed so it runs in editor.
 extends EditorScenePostImport
 
@@ -10,6 +12,7 @@ func _post_import(scene):
 
 func iterate(node:Node):
 	if node != null:
+		# this has been added
 		if node.name == "soundSource":
 			print("adding node")
 			var sound = AudioStreamPlayer3D.new()
