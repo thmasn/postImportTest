@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://brn3hcuex0yph"]
+
+[ext_resource type="PackedScene" uid="uid://bprcfycqdk7cp" path="res://exampleFile.blend" id="1_k4yi5"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="exampleFile" parent="." instance=ExtResource("1_k4yi5")]
+
+[editable path="exampleFile"]
